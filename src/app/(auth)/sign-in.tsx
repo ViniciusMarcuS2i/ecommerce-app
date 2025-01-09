@@ -9,6 +9,7 @@ import SocialLoginButton from "@/src/components/signin-screen-components/social-
 import { Google } from "@/src/assets/images";
 import { Apple } from "@/src/assets/images";
 import { router } from "expo-router";
+import AuthTextInput from "@/src/components/signin-screen-components/input";
 
 function SignIn() {
   return (
@@ -23,15 +24,8 @@ function SignIn() {
         </Text>
       </VStack>
       <VStack className="gap-5 px-8 pt-14">
-        <TextInput
-          placeholder="E-mail"
-          className="font-semiHeading rounded-2xl bg-white px-6 py-5 text-lg shadow-2xl"
-        />
-        <TextInput
-          secureTextEntry
-          placeholder="Senha"
-          className="font-semiHeading rounded-2xl bg-white px-6 py-5 text-lg text-gray-800 shadow-2xl"
-        />
+        <AuthTextInput placeholder="E-mail" />
+        <AuthTextInput isPassword placeholder="Senha" />
         <TouchableOpacity activeOpacity={0.7}>
           <Text className="font-heading text-right text-blue-400">
             Esqueci a senha
