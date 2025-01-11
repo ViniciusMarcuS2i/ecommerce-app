@@ -26,7 +26,7 @@ function SignUp() {
         <AuthTextInput placeholder="E-mail" />
         <AuthTextInput isPassword placeholder="Senha" />
       </VStack>
-      <Button className="bg-primary mx-8 mt-12 h-16 rounded-xl shadow-2xl active:opacity-80">
+      <Button className="bg-primary mx-8 mt-12 h-16 rounded-xl shadow-sm active:opacity-80">
         <ButtonText className="font-heading text-xl">Criar Conta</ButtonText>
       </Button>
       <HStack className="mt-10 items-center justify-center">

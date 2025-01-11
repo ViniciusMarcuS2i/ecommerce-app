@@ -15,7 +15,7 @@ function AuthTextInput({
       {...rest}
       placeholder={placeholder}
       secureTextEntry={isPassword}
-      className="font-semiHeading rounded-2xl bg-white px-6 py-5 text-lg shadow-2xl"
+      className="h-20 rounded-2xl bg-white px-6 font-semiHeading text-xl shadow-sm"
     />
   );
 }

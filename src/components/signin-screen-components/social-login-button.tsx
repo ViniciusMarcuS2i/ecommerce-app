@@ -12,7 +12,7 @@ function SocialLoginButton({ title, ...rest }: SocialLoginButtonProps) {
       activeOpacity={0.8}
       className="rounded-xl border-2 border-white bg-transparent px-8 py-3"
     >
-      <Image className="h-8 w-8" source={title} />
+      <Image alt="Social Logo" className="h-8 w-8" source={title} />
     </TouchableOpacity>
   );
 }

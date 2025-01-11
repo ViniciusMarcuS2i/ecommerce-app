@@ -1,4 +1,3 @@
-import { Slot } from "expo-router";
 import {
   useFonts,
   Montserrat_400Regular,
@@ -9,6 +8,7 @@ import "@/global.css";
 import { GluestackUIProvider } from "@/src/components/ui/gluestack-ui-provider";
 import { StatusBar } from "react-native";
 import Loading from "@/src/components/loading";
+import { Slot } from "expo-router";
 
 function Layout() {
   const [fontsLoaded] = useFonts({

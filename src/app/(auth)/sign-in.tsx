@@ -1,7 +1,7 @@
 import ScreenContainer from "@/src/components/screen-container";
 import { VStack } from "@/src/components/ui/vstack";
 import { Text } from "@/src/components/ui/text";
-import { TextInput, TouchableOpacity } from "react-native";
+import { TouchableOpacity } from "react-native";
 import { Button, ButtonText } from "@/src/components/ui/button";
 import { HStack } from "@/src/components/ui/hstack";
 import Svg, { Line } from "react-native-svg";
@@ -28,11 +28,11 @@ function SignIn() {
         <AuthTextInput isPassword placeholder="Senha" />
         <TouchableOpacity activeOpacity={0.7}>
           <Text className="font-heading text-right text-blue-400">
-            Esqueci a senha
+            Esqueceu a senha?
           </Text>
         </TouchableOpacity>
       </VStack>
-      <Button className="bg-primary mx-8 mt-12 h-16 rounded-xl shadow-2xl active:opacity-80">
+      <Button className="bg-primary mx-8 mt-12 h-16 rounded-xl shadow-sm active:opacity-80">
         <ButtonText className="font-heading text-xl">Entrar</ButtonText>
       </Button>
       <HStack className="mt-10 items-center justify-center">

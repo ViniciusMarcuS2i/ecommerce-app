@@ -15,12 +15,13 @@ function WelcomeButton({ title1, title2, ...rest }: WelcomeButtonProps) {
     <>
       <Pressable
         {...rest}
+        onPress={() => router.navigate("/(auth)/sign-up")}
         style={{ boxShadow: "4px 0 24px -20px" }}
         className="z-10 w-52 rounded-2xl border-2 border-white bg-white py-4"
       >
         {({ pressed }) => (
           <Text
-            className="text-center text-xl font-semibold text-primary-500"
+            className="font-semiHeading text-center text-xl text-primary-500"
             style={{ opacity: pressed ? 0.5 : 1 }}
           >
             {title1}
@@ -35,7 +36,7 @@ function WelcomeButton({ title1, title2, ...rest }: WelcomeButtonProps) {
       >
         {({ pressed }) => (
           <Text
-            className="text-center text-xl font-semibold text-primary-500"
+            className="font-semiHeading text-center text-xl text-primary-500"
             style={{ opacity: pressed ? 0.5 : 1 }}
           >
             {title2}

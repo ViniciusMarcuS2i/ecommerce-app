@@ -1,7 +1,16 @@
 import { Redirect } from "expo-router";
+import { useState } from "react";
 
-function Home() {
-  return <Redirect href="/(auth)/welcome" />;
+function Index() {
+  const [user, setUser] = useState(false);
+
+  if (user) {
+    return <Redirect href="/home" />;
+  }
+
+  if (!user) {
+    return <Redirect href="/welcome" />;
+  }
 }
 
-export default Home;
+export default Index;

@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        gray: "#e2e2e2",
         primary: "#ff7029",
         secondary: {
           0: 'rgb(var(--color-secondary-0)/<alpha-value>)',
